@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      background-color: hsl(204, 43%, 93%);
+      font-family: 'Karla', sans-serif;
+    }
+
+    main {
+      width: 630px;
+    }
+
+    .sr-only {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    .upper-block {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .upper-block h2 {
+      color: hsl(179, 62%, 43%);
+    }
+
+    .upper-block>div:nth-of-type(1) {
+      color: hsl(71, 73%, 54%);
+    }
+
+    .upper-block>p:nth-of-type(1) {
+      color: hsl(218, 22%, 67%);
+    }
+
+    .lower-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .lower-block {
+      color: #ffffff;
+    }
+
+    .left-container {
+      padding: 1rem 2rem;
+      background-color: hsl(179, 62%, 43%);
+      border-radius: 0 0 0 0.5rem;
+    }
+
+    .price {
+      color: hsl(204, 43%, 93%);
+      display: flex;
+      align-items: center;
+    }
+
+    .price span {
+      color: #ffffff;
+      font-size: 1.5rem;
+      margin-right: 0.4rem;
+      font-weight: 700;
+    }
+
+    button {
+      width: 100%;
+      background-color: hsl(71, 73%, 54%);
+      padding: 1rem;
+      border: none;
+      color: #ffffff;
+      font-weight: 700;
+      border-radius: 0.3rem;
+      font-family: 'Karla', sans-serif;
+      font-size: 1rem;
+      margin-top: 1.4rem;
+    }
+
+    .right-container {
+      padding: 1rem 2rem;
+      background-color: #4ABEBD;
+      border-radius: 0 0 0.5rem 0;
+    }
+
+    .right-container ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    @media (max-width: 700px) {
+      main {
+        width: 90%;
+      }
+
+      .lower-block {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+
+      .left-container {
+        border-radius: 0 0 0 0;
+      }
+
+      .right-container {
+        border-radius: 0 0 0.5rem 0.5rem;
+      }
+    }
+
+
+    
+
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="sr-only">
+      
+    </h1>
+    <div class="upper-block">
+      <h2>Join our community</h2>
+      <div>30-day, hassle-free money back guarantee</div>
+      <p>
+        Gain access to our full library of tutorials along with expert code reviews.
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </div>
+    
+    <div class="lower-block">
+      <div class="left-container">
+        <h2>Monthly Subscription</h2>
+        <div class="price"><span>&dollar;29</span> per month</div>
+        <div>Full access for less than &dollar;1 a day</div>
+        <button>Sign Up</button>
+      </div>
+    
+      <div class="right-container">
+        <h2>Why Us</h2>
+        <ul>
+          <li>Tutorials by industry experts</li>
+          <li>Peer &amp; expert code review</li>
+          <li>Coding exercises</li>
+          <li>Access to our GitHub repos</li>
+          <li>Community forum</li>
+          <li>Flashcard decks</li>
+          <li>New videos every week</li>
+        </ul>
+        </p>
+      </div>
+    </div>
+  </main>
+  
+  
+
+  
+  
+
+</body>
+</html>
